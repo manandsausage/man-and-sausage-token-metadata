@@ -4,7 +4,7 @@
     "version": "1.0.0",
     "author": "The Man",
     "properties": {
-        "contractAddress": "0x1234567890abcdef1234567890abcdef12345678",
+        "contractAddress": "",
         "network": "Binance Smart Chain",
         "creationDate": "2024-09-25",
         "functions": [
