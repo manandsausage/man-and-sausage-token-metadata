@@ -1,0 +1,110 @@
+{
+    "name": "Man and Sausage Token",
+    "description": "This smart contract governs the Man and Sausage Token, ensuring secure and transparent transactions.",
+    "version": "1.0.0",
+    "author": "The Man",
+    "properties": {
+        "contractAddress": "0x1234567890abcdef1234567890abcdef12345678",
+        "network": "Binance Smart Chain",
+        "creationDate": "2024-09-25",
+        "functions": [
+            {
+                "name": "transfer",
+                "description": "Transfers tokens from one address to another.",
+                "inputs": [
+                    {
+                        "name": "recipient",
+                        "type": "address"
+                    },
+                    {
+                        "name": "amount",
+                        "type": "uint256"
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "success",
+                        "type": "bool"
+                    }
+                ]
+            },
+            {
+                "name": "approve",
+                "description": "Approves the passed address to spend the specified amount of tokens on behalf of msg.sender.",
+                "inputs": [
+                    {
+                        "name": "spender",
+                        "type": "address"
+                    },
+                    {
+                        "name": "amount",
+                        "type": "uint256"
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "success",
+                        "type": "bool"
+                    }
+                ]
+            },
+            {
+                "name": "transferFrom",
+                "description": "Transfers tokens from one address to another using the allowance mechanism.",
+                "inputs": [
+                    {
+                        "name": "sender",
+                        "type": "address"
+                    },
+                    {
+                        "name": "recipient",
+                        "type": "address"
+                    },
+                    {
+                        "name": "amount",
+                        "type": "uint256"
+                    }
+                ],
+                "outputs": [
+                    {
+                        "name": "success",
+                        "type": "bool"
+                    }
+                ]
+            },
+            {
+                "name": "setBurnRate",
+                "description": "Sets the burn rate for token transfers.",
+                "inputs": [
+                    {
+                        "name": "burnRate",
+                        "type": "uint256"
+                    }
+                ],
+                "outputs": []
+            },
+            {
+                "name": "setTransactionFee",
+                "description": "Sets the transaction fee for token transfers.",
+                "inputs": [
+                    {
+                        "name": "transactionFee",
+                        "type": "uint256"
+                    }
+                ],
+                "outputs": []
+            },
+            {
+                "name": "burn",
+                "description": "Burns the specified amount of tokens from the caller's account.",
+                "inputs": [
+                    {
+                        "name": "amount",
+                        "type": "uint256"
+                    }
+                ],
+                "outputs": []
+            }
+        ]
+    }
+}
