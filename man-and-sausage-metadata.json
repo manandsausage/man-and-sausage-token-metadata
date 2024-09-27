@@ -7,6 +7,7 @@
         "contractAddress": "",
         "network": "Binance Smart Chain",
         "creationDate": "2024-09-25",
+        "totalSupply": 420921000000000,
         "functions": [
             {
                 "name": "transfer",
